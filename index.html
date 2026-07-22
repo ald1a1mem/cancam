@@ -20,6 +20,13 @@ const githubUsername = "ald1a1mem";
 
 // 3. 右側時間軸捷徑（顯示名稱、要跳轉的時間秒數）
 const timeLinks = [
+  { label: "LEO", seconds: 1 },
+  { label: "相沅", seconds: 9 },
+  { label: "ARNO", seconds: 16 },
+  { label: "俊抒", seconds: 22 },
+  { label: "鑫隆", seconds: 28 },
+  { label: "相炫", seconds: 34 },
+  { label: "安信", seconds: 44 },
 ];
 
 // 4. 影片字幕設定（如不需滾動字幕，保持空陣列 [] 即可）
@@ -287,7 +294,8 @@ function onYouTubeIframeAPIReady() {
     height: "360",
     width: "640",
     videoId: videoId,
-    playerVars: { 'autoplay': 0, 'controls': 1, 'rel': 0, 'modestbranding': 1, 'origin': window.location.origin },
+    playerVars: { 'autoplay': 0, 'controls': 1, 'rel': 0, 'modestbranding': 1, 'origin': window.location.origin,
+      'fs': 0 },
     events: { 'onReady': onPlayerReady }
   });
 }
